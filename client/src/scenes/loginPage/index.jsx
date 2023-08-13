@@ -16,7 +16,7 @@ const LoginPage = () => {
           color="primary"
           textAlign="center"
         >
-          Sociopedia
+          SocialMania
         </Typography>
       </Box>
       <Box
