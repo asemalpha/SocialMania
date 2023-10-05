@@ -20,14 +20,14 @@ const postSchema = mongoose.Schema(
     userPicturePath: String,
     likes: {
       type: Map,
-      of: Boolean, // boolean value to check if the current logged in user has liked this post
+      of: Boolean,
     },
     comments: {
       type: Array,
       default: [],
     },
   },
-  { timeStamps: true }
+  { timestamps: true }
 );
 
 const Post = mongoose.model("Post", postSchema);

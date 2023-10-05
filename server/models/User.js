@@ -10,7 +10,7 @@ const UserSchema = new mongoose.Schema(
     },
     lastName: {
       type: String,
-      require: true,
+      required: true,
       min: 2,
       max: 50,
     },
@@ -23,7 +23,7 @@ const UserSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
-      min: 8,
+      min: 5,
     },
     picturePath: {
       type: String,
@@ -40,5 +40,6 @@ const UserSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
 const User = mongoose.model("User", UserSchema);
 export default User;
